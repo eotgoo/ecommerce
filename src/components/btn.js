@@ -1,17 +1,33 @@
 import React from "react";
+// import { Button } from "react-bootstrap";
+
+// const Btn = (props) => {
+//   return (
+//     <Button
+//       variant={props.variant}
+//       onClick={() => {
+//         props.handleClick(props.title);
+//       }}
+//     >
+//       {props.title}
+//     </Button>
+//   );
+// };
+
+// export default Btn;
+
 import { Button } from "react-bootstrap";
 
 const Btn = (props) => {
   return (
     <Button
-      variant={props.variant}
+      variant="danger"
       onClick={() => {
-        props.handleClick(props.title);
+        props.handleChange(props.menu.category);
       }}
     >
-      {props.title}
+      {props.menu.name}
     </Button>
   );
 };
-
 export default Btn;
